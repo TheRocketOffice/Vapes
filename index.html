@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Rocket Office LTD - Product Catalog</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <header>
+    <img src="assets/logo.png" alt="The Rocket Office LTD Logo" class="logo">
+    <h1>Welcome to The Rocket Office LTD</h1>
+    <div id="user-auth"></div>
+  </header>
+
+  <main id="product-catalog">
+    <div id="filter-section">
+      <input type="text" id="search-bar" placeholder="Search flavors..." oninput="filterProducts()">
+    </div>
+    <!-- Products will be dynamically loaded here -->
+  </main>
+
+  <footer>
+    <a href="admin.html">Admin Login</a>
+  </footer>
+</body>
+</html>

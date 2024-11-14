@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="css/admin-style.css">
+  <script defer src="js/admin.js"></script>
+</head>
+<body>
+  <div id="login-section">
+    <h2>Admin Login</h2>
+    <label for="admin-password">Password:</label>
+    <input type="password" id="admin-password">
+    <button onclick="adminLogin()">Login</button>
+  </div>
+
+  <section id="admin-dashboard" style="display:none;">
+    <h2>Admin Dashboard</h2>
+    <div id="product-management">
+      <h3>Product Management</h3>
+      <button onclick="addNewProduct()">Add New Product</button>
+      <table id="product-table">
+        <!-- Dynamic content for products -->
+      </table>
+    </div>
+    <div id="order-management">
+      <h3>Order Management</h3>
+      <table id="order-table">
+        <!-- Dynamic content for orders -->
+      </table>
+    </div>
+  </section>
+</body>
+</html>
